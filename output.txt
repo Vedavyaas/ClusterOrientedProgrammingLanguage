@@ -1,138 +1,133 @@
-------------------------------------------------------------
-LINE   TOKEN TYPE           LEXEME         
-------------------------------------------------------------
-1      AT                   @              
-1      IDENTIFIER           Cluster        
-1      LPAREN               (              
-1      STRING_LITERAL       MainCluster    
-1      RPAREN               )              
-2      CLASS                class          
-2      IDENTIFIER           User           
-2      LBRACE               {              
-4      INT                  int            
-4      IDENTIFIER           id             
-4      EQUAL                =              
-4      INT_LITERAL          1              
-4      SEMICOLON            ;              
-5      FLOAT                float          
-5      IDENTIFIER           salary         
-5      EQUAL                =              
-5      FLOAT_LITERAL        25000.50       
-5      SEMICOLON            ;              
-7      METHOD               method         
-7      IDENTIFIER           main           
-7      LBRACE               {              
-9      IDENTIFIER           id             
-9      INCREMENT            ++             
-9      SEMICOLON            ;              
-14     IDENTIFIER           salary         
-14     PLUS_EQUAL           +=             
-14     FLOAT_LITERAL        500.75         
-14     SEMICOLON            ;              
-15     STRING               string         
-15     IDENTIFIER           st             
-15     EQUAL                =              
-15     STRING_LITERAL       Hello          
-15     SEMICOLON            ;              
-17     IF                   if             
-17     LPAREN               (              
-17     IDENTIFIER           id             
-17     EQUALITY             ==             
-17     INT_LITERAL          1              
-17     RPAREN               )              
-17     LBRACE               {              
-18     IDENTIFIER           salary         
-18     PLUS_EQUAL           +=             
-18     FLOAT_LITERAL        100.0          
-18     SEMICOLON            ;              
-19     RBRACE               }              
-20     ELSE                 else           
-20     IF                   if             
-20     LPAREN               (              
-20     IDENTIFIER           id             
-20     LT                   <              
-20     INT_LITERAL          10             
-20     RPAREN               )              
-20     LBRACE               {              
-21     IDENTIFIER           salary         
-21     PLUS_EQUAL           +=             
-21     FLOAT_LITERAL        50.0           
-21     SEMICOLON            ;              
-22     RBRACE               }              
-23     ELSE                 else           
-23     LBRACE               {              
-24     IDENTIFIER           salary         
-24     MINUS_EQUAL          -=             
-24     FLOAT_LITERAL        25.0           
-24     SEMICOLON            ;              
-25     RBRACE               }              
-27     WHILE                while          
-27     LPAREN               (              
-27     IDENTIFIER           id             
-27     LTE                  <=             
-27     INT_LITERAL          5              
-27     RPAREN               )              
-27     LBRACE               {              
-28     IDENTIFIER           id             
-28     INCREMENT            ++             
-28     SEMICOLON            ;              
-29     RBRACE               }              
-31     FOR                  for            
-31     LPAREN               (              
-31     INT                  int            
-31     IDENTIFIER           i              
-31     EQUAL                =              
-31     INT_LITERAL          0              
-31     SEMICOLON            ;              
-31     IDENTIFIER           i              
-31     LT                   <              
-31     INT_LITERAL          10             
-31     SEMICOLON            ;              
-31     IDENTIFIER           i              
-31     INCREMENT            ++             
-31     RPAREN               )              
-31     LBRACE               {              
-32     IDENTIFIER           salary         
-32     PLUS_EQUAL           +=             
-32     IDENTIFIER           i              
-32     SEMICOLON            ;              
-33     RBRACE               }              
-34     RBRACE               }              
-35     RBRACE               }              
-37     AT                   @              
-37     IDENTIFIER           Cluster        
-37     LPAREN               (              
-37     STRING_LITERAL       BackupCluster  
-37     RPAREN               )              
-38     CLASS                class          
-38     IDENTIFIER           Employee       
-38     LBRACE               {              
-40     INT                  int            
-40     IDENTIFIER           age            
-40     EQUAL                =              
-40     INT_LITERAL          25             
-40     SEMICOLON            ;              
-41     FLOAT                float          
-41     IDENTIFIER           bonus          
-41     EQUAL                =              
-41     FLOAT_LITERAL        1000.0         
-41     SEMICOLON            ;              
-43     METHOD               method         
-43     IDENTIFIER           comp           
-43     LBRACE               {              
-44     IF                   if             
-44     LPAREN               (              
-44     IDENTIFIER           age            
-44     GTE                  >=             
-44     INT_LITERAL          18             
-44     RPAREN               )              
-44     LBRACE               {              
-45     IDENTIFIER           bonus          
-45     STAR_EQUAL           *=             
-45     INT_LITERAL          2              
-45     SEMICOLON            ;              
-46     RBRACE               }              
-47     RBRACE               }              
-49     RBRACE               }              
-50     EOF                  EOF            
-------------------------------------------------------------
+<AT, @>
+<CLUSTER, Cluster>
+<LPAREN, (>
+<STRING_LITERAL, "MainCluster">
+<RPAREN, )>
+<IDENTIFIER, class>
+<IDENTIFIER, User>
+<LBRACE, {>
+<INTEGER, int>
+<IDENTIFIER, id>
+<ASSIGN, =>
+<INT_LITERAL, 1>
+<SEMICOLON, ;>
+<FLOAT, float>
+<IDENTIFIER, salary>
+<ASSIGN, =>
+<FLOAT_LITERAL, 25000.50>
+<SEMICOLON, ;>
+<METHOD, method>
+<IDENTIFIER, main>
+<LBRACE, {>
+<IDENTIFIER, id>
+<INCREMENT, ++>
+<SEMICOLON, ;>
+<IDENTIFIER, salary>
+<PLUS_EQUAL, +=>
+<FLOAT_LITERAL, 500.75>
+<SEMICOLON, ;>
+<IDENTIFIER, string>
+<IDENTIFIER, st>
+<ASSIGN, =>
+<STRING_LITERAL, "Hello">
+<SEMICOLON, ;>
+<IF, if>
+<LPAREN, (>
+<IDENTIFIER, id>
+<EQUAL, ==>
+<INT_LITERAL, 1>
+<RPAREN, )>
+<LBRACE, {>
+<IDENTIFIER, salary>
+<PLUS_EQUAL, +=>
+<FLOAT_LITERAL, 100.0>
+<SEMICOLON, ;>
+<RBRACE, }>
+<ELSE, else>
+<IF, if>
+<LPAREN, (>
+<IDENTIFIER, id>
+<LT, <>
+<INT_LITERAL, 10>
+<RPAREN, )>
+<LBRACE, {>
+<IDENTIFIER, salary>
+<PLUS_EQUAL, +=>
+<FLOAT_LITERAL, 50.0>
+<SEMICOLON, ;>
+<RBRACE, }>
+<ELSE, else>
+<LBRACE, {>
+<IDENTIFIER, salary>
+<MINUS_EQUAL, -=>
+<FLOAT_LITERAL, 25.0>
+<SEMICOLON, ;>
+<RBRACE, }>
+<WHILE, while>
+<LPAREN, (>
+<IDENTIFIER, id>
+<LTE, <=>
+<INT_LITERAL, 5>
+<RPAREN, )>
+<LBRACE, {>
+<IDENTIFIER, id>
+<INCREMENT, ++>
+<SEMICOLON, ;>
+<RBRACE, }>
+<IDENTIFIER, for>
+<LPAREN, (>
+<INTEGER, int>
+<IDENTIFIER, i>
+<ASSIGN, =>
+<INT_LITERAL, 0>
+<SEMICOLON, ;>
+<IDENTIFIER, i>
+<LT, <>
+<INT_LITERAL, 10>
+<SEMICOLON, ;>
+<IDENTIFIER, i>
+<INCREMENT, ++>
+<RPAREN, )>
+<LBRACE, {>
+<IDENTIFIER, salary>
+<PLUS_EQUAL, +=>
+<IDENTIFIER, i>
+<SEMICOLON, ;>
+<RBRACE, }>
+<RBRACE, }>
+<RBRACE, }>
+<AT, @>
+<CLUSTER, Cluster>
+<LPAREN, (>
+<STRING_LITERAL, "BackupCluster">
+<RPAREN, )>
+<IDENTIFIER, class>
+<IDENTIFIER, Employee>
+<LBRACE, {>
+<INTEGER, int>
+<IDENTIFIER, age>
+<ASSIGN, =>
+<INT_LITERAL, 25>
+<SEMICOLON, ;>
+<FLOAT, float>
+<IDENTIFIER, bonus>
+<ASSIGN, =>
+<FLOAT_LITERAL, 1000.0>
+<SEMICOLON, ;>
+<METHOD, method>
+<IDENTIFIER, comp>
+<LBRACE, {>
+<IF, if>
+<LPAREN, (>
+<IDENTIFIER, age>
+<GTE, >=>
+<INT_LITERAL, 18>
+<RPAREN, )>
+<LBRACE, {>
+<IDENTIFIER, bonus>
+<STAR_EQUAL, *=>
+<INT_LITERAL, 2>
+<SEMICOLON, ;>
+<RBRACE, }>
+<RBRACE, }>
+<RBRACE, }>
