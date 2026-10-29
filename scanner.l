@@ -1,5 +1,7 @@
 %{
 #include <stdio.h>
+#include "parser.tab.h"
+
 %}
 
 ws [ \t\n]
@@ -116,14 +118,3 @@ modulo "%"
 %%
 
 int yywrap() {return 1;}
-
-int main() {
-	extern FILE *yyin;
-	extern FILE *yyout;
-
-	yyin = fopen("input.txt", "r");
-	yyout = fopen("output.txt", "w");
-
-	yylex();
-	return 0;
-}
