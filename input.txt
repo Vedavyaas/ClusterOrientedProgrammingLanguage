@@ -1,49 +1,23 @@
-@Cluster("MainCluster")
-class User {
+int temperature, humidity, pressure;
+float adjustedTemperature, riskScore;
+int sensorCount;
 
-    int id = 1;
-    float salary = 25000.50;
+sensorCount = 10;
+temperature = 32;
+humidity = 75;
+pressure = 1012;
 
-    method main {
-        // Increment id
-            id++;
+temperature++;
+humidity--;
+++pressure;
 
-            /*
-                Update salary
-            */
-            salary += 500.75;
-            string st = "Hello";
+adjustedTemperature = (temperature * 1.8 + 32) - 2;
+riskScore = adjustedTemperature * humidity / sensorCount;
 
-            if (id == 1) {
-                salary += 100.0;
-            }
-            else if (id < 10) {
-                salary += 50.0;
-            }
-            else {
-                salary -= 25.0;
-            }
+temperature += 5;
+humidity -= 10;
+pressure *= 2;
+pressure /= 4;
+pressure %= 100;
 
-            while (id <= 5) {
-                id++;
-            }
-
-            for (int i = 0; i < 10; i++) {
-                salary += i;
-            }
-    }
-}
-
-@Cluster("BackupCluster")
-class Employee {
-
-    int age = 25;
-    float bonus = 1000.0;
-
-    method comp {
-        if (age >= 18) {
-            bonus *= 2;
-        }
-    }
-
-}
+riskScore = (temperature + humidity) * pressure / sensorCount;

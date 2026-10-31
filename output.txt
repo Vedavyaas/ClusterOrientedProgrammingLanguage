@@ -1,134 +1,31 @@
-Null. 
-<AT, @>
-<CLUSTER, Cluster>
-<LPAREN, (>
-<STRING_LITERAL, "MainCluster">
-<RPAREN, )>
-<IDENTIFIER, class>
-<IDENTIFIER, User>
-<LBRACE, {>
-<INTEGER, int>
-<IDENTIFIER, id>
-<ASSIGN, =>
-<INT_LITERAL, 1>
-<SEMICOLON, ;>
-<FLOAT, float>
-<IDENTIFIER, salary>
-<ASSIGN, =>
-<FLOAT_LITERAL, 25000.50>
-<SEMICOLON, ;>
-<METHOD, method>
-<IDENTIFIER, main>
-<LBRACE, {>
-<IDENTIFIER, id>
-<INCREMENT, ++>
-<SEMICOLON, ;>
-<IDENTIFIER, salary>
-<PLUS_EQUAL, +=>
-<FLOAT_LITERAL, 500.75>
-<SEMICOLON, ;>
-<IDENTIFIER, string>
-<IDENTIFIER, st>
-<ASSIGN, =>
-<STRING_LITERAL, "Hello">
-<SEMICOLON, ;>
-<IF, if>
-<LPAREN, (>
-<IDENTIFIER, id>
-<EQUAL, ==>
-<INT_LITERAL, 1>
-<RPAREN, )>
-<LBRACE, {>
-<IDENTIFIER, salary>
-<PLUS_EQUAL, +=>
-<FLOAT_LITERAL, 100.0>
-<SEMICOLON, ;>
-<RBRACE, }>
-<ELSE, else>
-<IF, if>
-<LPAREN, (>
-<IDENTIFIER, id>
-<LT, <>
-<INT_LITERAL, 10>
-<RPAREN, )>
-<LBRACE, {>
-<IDENTIFIER, salary>
-<PLUS_EQUAL, +=>
-<FLOAT_LITERAL, 50.0>
-<SEMICOLON, ;>
-<RBRACE, }>
-<ELSE, else>
-<LBRACE, {>
-<IDENTIFIER, salary>
-<MINUS_EQUAL, -=>
-<FLOAT_LITERAL, 25.0>
-<SEMICOLON, ;>
-<RBRACE, }>
-<WHILE, while>
-<LPAREN, (>
-<IDENTIFIER, id>
-<LTE, <=>
-<INT_LITERAL, 5>
-<RPAREN, )>
-<LBRACE, {>
-<IDENTIFIER, id>
-<INCREMENT, ++>
-<SEMICOLON, ;>
-<RBRACE, }>
-<IDENTIFIER, for>
-<LPAREN, (>
-<INTEGER, int>
-<IDENTIFIER, i>
-<ASSIGN, =>
-<INT_LITERAL, 0>
-<SEMICOLON, ;>
-<IDENTIFIER, i>
-<LT, <>
-<INT_LITERAL, 10>
-<SEMICOLON, ;>
-<IDENTIFIER, i>
-<INCREMENT, ++>
-<RPAREN, )>
-<LBRACE, {>
-<IDENTIFIER, salary>
-<PLUS_EQUAL, +=>
-<IDENTIFIER, i>
-<SEMICOLON, ;>
-<RBRACE, }>
-<RBRACE, }>
-<RBRACE, }>
-<AT, @>
-<CLUSTER, Cluster>
-<LPAREN, (>
-<STRING_LITERAL, "BackupCluster">
-<RPAREN, )>
-<IDENTIFIER, class>
-<IDENTIFIER, Employee>
-<LBRACE, {>
-<INTEGER, int>
-<IDENTIFIER, age>
-<ASSIGN, =>
-<INT_LITERAL, 25>
-<SEMICOLON, ;>
-<FLOAT, float>
-<IDENTIFIER, bonus>
-<ASSIGN, =>
-<FLOAT_LITERAL, 1000.0>
-<SEMICOLON, ;>
-<METHOD, method>
-<IDENTIFIER, comp>
-<LBRACE, {>
-<IF, if>
-<LPAREN, (>
-<IDENTIFIER, age>
-<GTE, >=>
-<INT_LITERAL, 18>
-<RPAREN, )>
-<LBRACE, {>
-<IDENTIFIER, bonus>
-<STAR_EQUAL, *=>
-<INT_LITERAL, 2>
-<SEMICOLON, ;>
-<RBRACE, }>
-<RBRACE, }>
-<RBRACE, }>
+sensorCount = 10
+temperature = 32
+humidity = 75
+pressure = 1012
+T1 = temperature + 1
+temperature = T1
+T2 = humidity - 1
+humidity = T2
+T3 = pressure + 1
+pressure = T3
+T4 = temperature * 1.800000
+T5 = T4 + 32
+T6 = T5 - 2
+adjustedTemperature = T6
+T7 = adjustedTemperature * humidity
+T8 = T7 / sensorCount
+riskScore = T8
+T9 = temperature + 5
+temperature = T9
+T10 = humidity - 10
+humidity = T10
+T11 = pressure * 2
+pressure = T11
+T12 = pressure / 4
+pressure = T12
+T13 = pressure % 100
+pressure = T13
+T14 = temperature + humidity
+T15 = T14 * pressure
+T16 = T15 / sensorCount
+riskScore = T16
