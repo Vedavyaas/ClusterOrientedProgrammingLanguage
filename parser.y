@@ -86,15 +86,13 @@ void gen(const char *format, ...) {
 %left INCREMENT_POST DECREMENT_POST
 
 %type <sval> EXPR
-%type <sval> LEXPR
-%type <sval> PROGRAM
-%type <sval> TYPE
 
 %%
 
+
 PROGRAM : LEXPR PROGRAM
-        | LEXPR
-        ;
+	| LEXPR
+	;
 
 LEXPR : ID '=' EXPR ';' {
 	gen("%s = %s", $1, $3);
@@ -205,7 +203,7 @@ EXPR : EXPR '+' EXPR {
      | FLOAT_LITERAL {
 	char buffer[32];
         snprintf(buffer, sizeof(buffer), "%f", $1);
-        $$ = strdup(buffer);
+	        $$ = strdup(buffer);
 }	
      ;
 
@@ -216,8 +214,6 @@ IDLIST : ID
 TYPE : INT
      | FLOAT
      ;
-
-
 
 %%
 

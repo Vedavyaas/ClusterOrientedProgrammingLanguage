@@ -511,10 +511,10 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    95,    95,    96,    99,   103,   109,   115,   121,   127,
-     133,   137,   138,   141,   145,   149,   153,   157,   162,   167,
-     171,   177,   183,   189,   195,   199,   205,   212,   213,   216,
-     217
+       0,    93,    93,    94,    97,   101,   107,   113,   119,   125,
+     131,   135,   136,   139,   143,   147,   151,   155,   160,   165,
+     169,   175,   181,   187,   193,   197,   203,   210,   211,   214,
+     215
 };
 #endif
 
@@ -1483,14 +1483,14 @@ yyreduce:
   switch (yyn)
     {
         case 4:
-#line 99 "parser.y"
+#line 97 "parser.y"
     {
 	gen("%s = %s", (yyvsp[(1) - (4)].sval), (yyvsp[(3) - (4)].sval));
 ;}
     break;
 
   case 5:
-#line 103 "parser.y"
+#line 101 "parser.y"
     {
 	char *t = newTemp();
         gen("%s = %s + %s", t, (yyvsp[(1) - (4)].sval), (yyvsp[(3) - (4)].sval));
@@ -1499,7 +1499,7 @@ yyreduce:
     break;
 
   case 6:
-#line 109 "parser.y"
+#line 107 "parser.y"
     {
 	char *t = newTemp();
    	gen("%s = %s - %s", t, (yyvsp[(1) - (4)].sval), (yyvsp[(3) - (4)].sval));
@@ -1508,7 +1508,7 @@ yyreduce:
     break;
 
   case 7:
-#line 115 "parser.y"
+#line 113 "parser.y"
     {
 	char *t = newTemp();
     	gen("%s = %s * %s", t, (yyvsp[(1) - (4)].sval), (yyvsp[(3) - (4)].sval));
@@ -1517,7 +1517,7 @@ yyreduce:
     break;
 
   case 8:
-#line 121 "parser.y"
+#line 119 "parser.y"
     {
 	char *t = newTemp();
     	gen("%s = %s / %s", t, (yyvsp[(1) - (4)].sval), (yyvsp[(3) - (4)].sval));
@@ -1526,7 +1526,7 @@ yyreduce:
     break;
 
   case 9:
-#line 127 "parser.y"
+#line 125 "parser.y"
     {
 	char *t = newTemp();
     	gen("%s = %s %% %s", t, (yyvsp[(1) - (4)].sval), (yyvsp[(3) - (4)].sval));
@@ -1535,14 +1535,14 @@ yyreduce:
     break;
 
   case 10:
-#line 133 "parser.y"
+#line 131 "parser.y"
     {
 	gen("%s = %s", (yyvsp[(2) - (5)].sval), (yyvsp[(4) - (5)].sval));
 ;}
     break;
 
   case 13:
-#line 141 "parser.y"
+#line 139 "parser.y"
     {
 	(yyval.sval) = newTemp();
 	gen("%s = %s + %s", (yyval.sval), (yyvsp[(1) - (3)].sval), (yyvsp[(3) - (3)].sval));
@@ -1550,7 +1550,7 @@ yyreduce:
     break;
 
   case 14:
-#line 145 "parser.y"
+#line 143 "parser.y"
     {
  	(yyval.sval) = newTemp();       
         gen("%s = %s - %s", (yyval.sval), (yyvsp[(1) - (3)].sval), (yyvsp[(3) - (3)].sval));
@@ -1558,7 +1558,7 @@ yyreduce:
     break;
 
   case 15:
-#line 149 "parser.y"
+#line 147 "parser.y"
     {
         (yyval.sval) = newTemp();               
         gen("%s = %s * %s", (yyval.sval), (yyvsp[(1) - (3)].sval), (yyvsp[(3) - (3)].sval));
@@ -1566,7 +1566,7 @@ yyreduce:
     break;
 
   case 16:
-#line 153 "parser.y"
+#line 151 "parser.y"
     {
         (yyval.sval) = newTemp();               
         gen("%s = %s / %s", (yyval.sval), (yyvsp[(1) - (3)].sval), (yyvsp[(3) - (3)].sval));
@@ -1574,7 +1574,7 @@ yyreduce:
     break;
 
   case 17:
-#line 157 "parser.y"
+#line 155 "parser.y"
     {
         (yyval.sval) = newTemp();               
         gen("%s = %s %% %s", (yyval.sval), (yyvsp[(1) - (3)].sval), (yyvsp[(3) - (3)].sval));
@@ -1582,7 +1582,7 @@ yyreduce:
     break;
 
   case 18:
-#line 162 "parser.y"
+#line 160 "parser.y"
     {
 	(yyval.sval) = newTemp();
 	gen("%s = -%s", (yyval.sval), (yyvsp[(2) - (2)].sval));
@@ -1590,14 +1590,14 @@ yyreduce:
     break;
 
   case 19:
-#line 167 "parser.y"
+#line 165 "parser.y"
     {
 	(yyval.sval) = (yyvsp[(2) - (3)].sval);
 ;}
     break;
 
   case 20:
-#line 171 "parser.y"
+#line 169 "parser.y"
     {
 	(yyval.sval) = newTemp();
 	gen("%s = %s + 1", (yyval.sval), (yyvsp[(1) - (2)].sval));
@@ -1606,7 +1606,7 @@ yyreduce:
     break;
 
   case 21:
-#line 177 "parser.y"
+#line 175 "parser.y"
     {
 	(yyval.sval) = newTemp();
 	gen("%s = %s - 1", (yyval.sval), (yyvsp[(1) - (2)].sval));
@@ -1615,7 +1615,7 @@ yyreduce:
     break;
 
   case 22:
-#line 183 "parser.y"
+#line 181 "parser.y"
     {
 	(yyval.sval) = newTemp();
 	gen("%s = %s + 1", (yyval.sval), (yyvsp[(2) - (2)].sval));
@@ -1624,7 +1624,7 @@ yyreduce:
     break;
 
   case 23:
-#line 189 "parser.y"
+#line 187 "parser.y"
     {
 	(yyval.sval) = newTemp();
 	gen("%s = %s - 1", (yyval.sval), (yyvsp[(2) - (2)].sval));
@@ -1633,14 +1633,14 @@ yyreduce:
     break;
 
   case 24:
-#line 195 "parser.y"
+#line 193 "parser.y"
     {
 	(yyval.sval) = strdup((yyvsp[(1) - (1)].sval));
 ;}
     break;
 
   case 25:
-#line 199 "parser.y"
+#line 197 "parser.y"
     {
 	char buffer[32];
         snprintf(buffer, sizeof(buffer), "%d", (yyvsp[(1) - (1)].ival));
@@ -1649,11 +1649,11 @@ yyreduce:
     break;
 
   case 26:
-#line 205 "parser.y"
+#line 203 "parser.y"
     {
 	char buffer[32];
         snprintf(buffer, sizeof(buffer), "%f", (yyvsp[(1) - (1)].fval));
-        (yyval.sval) = strdup(buffer);
+	        (yyval.sval) = strdup(buffer);
 ;}
     break;
 
@@ -1873,7 +1873,7 @@ yyreturn:
 }
 
 
-#line 222 "parser.y"
+#line 218 "parser.y"
 
 
 
